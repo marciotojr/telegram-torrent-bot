@@ -4,7 +4,5 @@ services:
   bot:
     build: .
     container_name: telegram-torrent-bot
-    depends_on:
-      - transmission
     env_file: .env # Load environment variables from .env file
     restart: unless-stopped
